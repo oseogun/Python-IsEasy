@@ -1,10 +1,12 @@
 """
 Python code to demonstrate if statement syntax.
-Script compares three values and etruns 'True' if any two are the same
+Script compares three values and returns 'True' if any two are the same
 Written by Ose Ogun, Apr-2019.
 """
 
+# Convert string values of numbers to ther numeric values
 def convertToInt(value): 
+  # If value is a string value return integer equivalent
   if type(value) == str:  
     return int(value)
   else:
@@ -18,6 +20,7 @@ def comparison(value1, value2, value3):
   valueTwo = convertToInt(value2)
   valueThree = convertToInt(value3)
 
+  # Compare values to determine if any of them are equal
   if valueOne == valueTwo:
     print(True)
   elif valueOne == valueThree:
